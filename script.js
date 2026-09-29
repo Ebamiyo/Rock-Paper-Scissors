@@ -59,6 +59,11 @@ function playGame() {
     i++;
   }
   console.log(`Human Score: ${humanScore}, Computer Score: ${computerScore}`);
+  if (humanScore > computerScore) {
+    console.log(`Human Wins with ${humanScore}`);
+  } else if (computerScore > humanScore) {
+    console.log(`Human Wins with ${computerScore}`);
+  }
 }
 
 playGame();
