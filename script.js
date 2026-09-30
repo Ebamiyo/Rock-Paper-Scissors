@@ -87,12 +87,9 @@ for (let button of buttons) {
         console.log(`Human Wins with ${computerScore}`);
         winnerDeclaration.textContent = `Human Wins with ${computerScore} points`;
       }
-      // resetDiv.appendChild(resetLink);
+
       winnerDeclarationDiv.appendChild(winnerDeclaration);
       winnerDeclaration.appendChild(resetLink);
     }
   });
 }
-
-let computerTotal = 0;
-let humanTotal = 0;
