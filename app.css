@@ -1,0 +1,9 @@
+div {
+  margin-top: 3rem;
+}
+button {
+  background-color: rgb(254, 211, 130);
+}
+.winner-declaration {
+  font-size: 1.5rem;
+}
