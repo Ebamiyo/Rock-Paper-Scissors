@@ -24,33 +24,32 @@ let winner = "";
 
 function playRound(human, computer) {
   if (human == "rock" && computer == "paper") {
-    console.log("Human loses! Paper beats Rock! ");
-    commentary = "Human loses! Paper beats Rock!";
+    commentary = `Human played: ${human} Computer played: ${computer}.
+    Human loses! Paper beats Rock!`;
     computerScore += 1;
   } else if (human == "paper" && computer == "rock") {
-    console.log("Computer loses! Paper beats Rock!");
-    commentary = "Computer loses! Paper beats Rock!";
+    commentary = `Human played: ${human}. Computer played: ${computer}.
+    Computer loses! Paper beats Rock!`;
     humanScore += 1;
   } else if (human == "rock" && computer == "scissors") {
-    console.log("Computer loses! Rock beats Scissors!");
-    commentary = "Computer loses! Rock beats Scissors!";
+    commentary = `Human played: ${human}. Computer played: ${computer}.
+    Computer loses! Rock beats Scissors!`;
     humanScore += 1;
   } else if (human == "scissors" && computer == "rock") {
-    console.log("Human loses! Rock beats Scissors!");
-    commentary = "Human loses! Rock beats Scissors!";
+    commentary = `Human played: ${human}. Computer played: ${computer}.
+    Human loses! Rock beats Scissors!`;
     computerScore += 1;
   } else if (human == "scissors" && computer == "paper") {
-    console.log("Computer loses! Scissors beats Paper!");
-    commentary = "Computer loses! Scissors beats Paper!";
+    commentary = `Human played: ${human}. Computer played: ${computer}.
+    Computer loses! Scissors beats Paper!`;
     humanScore += 1;
   } else if (human == "paper" && computer == "scissors") {
-    console.log("Human loses! Scissors beats Paper!");
-    commentary = "Human loses! Scissors beats Paper!";
+    commentary = `Human played: ${human}. Computer played: ${computer}.
+    Human loses! Scissors beats Paper!`;
     computerScore += 1;
   } else if (human == computer) {
     humanScore -= 0;
     computerScore -= 0;
-    console.log("Its a tie.");
     commentary = "Its a tie.";
   }
   let roundOutput = `${commentary}
