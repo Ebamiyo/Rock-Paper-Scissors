@@ -60,8 +60,17 @@ function playRound(human, computer) {
 
 const buttons = document.querySelectorAll("button");
 const div = document.querySelector("#results-div");
+const winnerDeclarationDiv = document.querySelector("#winners-div");
 const winnerDeclaration = document.createElement("p");
 winnerDeclaration.setAttribute("class", "winner-declaration");
+
+const resetDiv = document.querySelector(".reset-div");
+
+const resetLink = document.createElement("a");
+resetLink.setAttribute("href", "/");
+resetLink.setAttribute("class", "reset-link");
+resetLink.textContent = "Reset";
+
 for (let button of buttons) {
   button.addEventListener("click", (event) => {
     const buttonText = event.target.id;
@@ -73,13 +82,15 @@ for (let button of buttons) {
     if (humanScore == 5 || computerScore == 5) {
       if (humanScore > computerScore) {
         console.log(`Human Wins with ${humanScore}`);
-        winnerDeclaration.textContent = `Human Wins with ${humanScore}`;
+        winnerDeclaration.textContent = `Human Wins with ${humanScore} points`;
       } else if (computerScore > humanScore) {
         console.log(`Human Wins with ${computerScore}`);
-        winnerDeclaration.textContent = `Human Wins with ${computerScore}`;
+        winnerDeclaration.textContent = `Human Wins with ${computerScore} points`;
       }
+      // resetDiv.appendChild(resetLink);
+      winnerDeclarationDiv.appendChild(winnerDeclaration);
+      winnerDeclaration.appendChild(resetLink);
     }
-    div.appendChild(winnerDeclaration);
   });
 }
 

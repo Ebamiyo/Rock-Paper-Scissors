@@ -1,6 +1,21 @@
 div {
   margin-top: 3rem;
 }
+
+a,
+.reset-link {
+  font-size: 1rem;
+  color: red;
+  background-color: blanchedalmond;
+  text-decoration: none;
+  padding: 0.3rem 0.4rem;
+  margin-left: 1rem;
+}
+
+/* a:visited,
+.reset-link:visited {
+  color: red;
+} */
 button {
   background-color: rgb(254, 211, 130);
 }
