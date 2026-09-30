@@ -96,22 +96,3 @@ for (let button of buttons) {
 
 let computerTotal = 0;
 let humanTotal = 0;
-
-// function playGame() {
-//   let i = 1;
-//   while (i <= 5) {
-//     let round = i;
-//     console.log(`Round ${round}`);
-//     playRound(getHumanChoice(), getComputerChoice());
-//     console.log(`Human: ${humanScore}, Computer: ${computerScore}`);
-//     i++;
-//   }
-//   console.log(`Human Score: ${humanScore}, Computer Score: ${computerScore}`);
-//   if (humanScore > computerScore) {
-//     console.log(`Human Wins with ${humanScore}`);
-//   } else if (computerScore > humanScore) {
-//     console.log(`Human Wins with ${computerScore}`);
-//   }
-// }
-
-// playGame();
