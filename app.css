@@ -1,11 +1,19 @@
-div {
+#winners-div {
+  display: flex;
+  justify-content: center;
+}
+
+.choice-button-section {
   margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 }
 
 a,
 .reset-link {
   font-size: 1rem;
-  color: red;
+  color: rgb(255, 77, 0);
   background-color: blanchedalmond;
   text-decoration: none;
   padding: 0.3rem 0.4rem;
@@ -17,8 +25,13 @@ a,
   color: red;
 } */
 button {
+  font-size: 2rem;
   background-color: rgb(254, 211, 130);
 }
 .winner-declaration {
   font-size: 1.5rem;
+}
+#results-div {
+  text-align: center;
+  font-size: 1.1rem;
 }
